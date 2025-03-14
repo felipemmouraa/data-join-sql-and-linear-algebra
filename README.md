@@ -146,13 +146,14 @@ Após todas as junções e a aplicação do filtro, o resultado exibido será:
 
 A mesma consulta pode ser representada em álgebra relacional da seguinte forma:
 
-\[
+$$ 
 \pi_{P.\text{Nome},\; C.\text{Nome},\; A.\text{Nome}} \Bigl(
-\bigl( \text{Professores} \; ⟕_{P.ID = C.ProfessorID} \; \text{Cursos} \bigr)
+( \text{Professores} \; ⟕_{P.ID = C.ProfessorID} \; \text{Cursos} )
 \; ⟗_{C.ID = M.CursoID} \; \text{Matrículas}
 \; ⟖_{M.AlunoID = A.ID} \; \text{Alunos}
 \Bigr)
-\]
+$$
+
 
 Onde:
 - \( ⟕ \) representa o **LEFT OUTER JOIN**;
